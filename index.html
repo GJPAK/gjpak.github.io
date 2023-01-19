@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css" />
+    <title>A Project of Life and Death</title>
+  </head>
+  <body>
+    <section class="mom" id="home">
+      <nav class="mom2">
+        <a href="index.html"><img src="images/aaa.png" /></a>
+        <div class="ongod" id="ohhellno">
+          <i class="fa fa-times" onclick="dadMilk()"></i>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li class="what">
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                >DESTROY</a
+              >
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="dad()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Welcome to my Random Website!</h1>
+        <p>
+          I made this for fun, y'know sometimes i kinda hate learning, but this
+          time it's kind of fun. <br />
+          I also made this to fill as a project in my portfolio lol.
+        </p>
+        <br />
+        <a
+          href="https://www.ovagames.com/story-of-seasons-pioneers-of-olive-town-multi8-elamigos.html"
+          target="_blank"
+          class="button"
+          >Umm.... Click this for fun!</a
+        >
+      </div>
+    </section>
+    <section class="thefun" id="about">
+      <div class="wow">
+        <h2>About Me</h2>
+        <p>
+          So.... umm i uhh how do i say this. I'm just a random guy on the
+          internet trying to start my first project lol. <br />
+          I go by the name <span class="nebulasobig">nebulasobig</span> if
+          you're wondering. <br />
+        </p>
+        <br />
+        <h2 class="social">My Social Media</h2>
+        <div class="socialrow">
+          <div class="socialroww">
+            <h3>Instagram</h3>
+            <p>
+              I'm not really active at Instagram. But maybe you can see my
+              random shitpost that i posted for absolutely no f*cking reason at
+              all.
+              <a
+                class="sociallink"
+                href="https://www.instagram.com/nebulasobig/"
+                >Click here</a
+              >
+            </p>
+          </div>
+          <div class="socialroww">
+            <h3>Discord</h3>
+            <p>
+              I'm always available in Discord... probably. Yeah you can send me
+              a friend request to my discord account.
+              <span class="sociallink" onclick="getdiscord()"
+                >Click here to copy.</span
+              >
+              <script>
+                function getdiscord() {
+                  navigator.clipboard.writeText("nebula#0456");
+
+                  // Alert the copied text
+                  alert("Copied the text");
+                }
+              </script>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---THIS IS A REFERENCE TO THE DAD GETTING MILK I THINK -->
+
+    <script>
+      var ohhellno = document.getElementById("ohhellno");
+
+      function dad() {
+        ohhellno.style.right = "0";
+      }
+
+      function dadMilk() {
+        ohhellno.style.right = "-300px";
+      }
+    </script>
+  </body>
+</html>

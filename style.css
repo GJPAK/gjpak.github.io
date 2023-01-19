@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+.mom{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.mom2{
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+.mom2 img{
+    width: 250px;
+}
+.ongod{
+    flex: 1;
+    text-align: right;
+    padding: 0% 3%;
+}
+.ongod ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+.ongod ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+.ongod ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(154, 117, 240);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.ongod ul li:hover::after{
+    width: 100%;
+}
+.ongod ul li a:hover::after{
+    content: '';
+    color: rgb(11, 93, 165);
+}
+.ongod .what :hover{
+    color: red;
+    transition: 1s;
+}
+.ongod .what:hover::after{
+    background-color: red;
+    transition: 1s;
+}
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-box h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.text-box p{
+    font-size: 20px;
+    color: rgb(167, 186, 187);
+    font-weight: 400;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button:hover{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(210, 184, 243);
+    background: rgb(106, 27, 233);
+    transition: 0.5s;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .ongod ul li{
+        display: block;
+    }
+    .ongod{
+        position: absolute;
+        background: rgb(11, 93, 165,.95);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -300px;
+        text-align: center;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        text-align: left;
+    }
+    .ongod ul{
+        padding: 10px;
+    }
+}
+
+.thefun{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(64, 65, 70, 0.7),rgba(58, 59, 65, 0.7)),url(images/image2.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.thefun .wow{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+h2{
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+}
+.social{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    font-weight: 500;
+    text-align: center;
+}
+p{
+    color: rgb(207, 215, 231);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+h3{
+    color: #fff;
+    margin: 2px 0;
+}
+.nebulasobig{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+}
+.socialrow{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.socialroww{
+    flex-basis: 40%;
+    background: rgba(44, 45, 46, 0.2);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+.socialroww:hover{
+    background: rgba(44, 45, 46, 0.7);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+.sociallink{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.sociallink:hover{
+    text-decoration: none;
+    color: rgb(0, 86, 247);
+    transition: .8s;
+}
+
+@media(max-width: 700px){
+    .socialrow{
+        flex-direction: column;
+    }
+}
